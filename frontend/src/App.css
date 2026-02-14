@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+
+.form input,
+.form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.form button {
+  padding: 10px;
+  background-color: #282c34;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #444;
+}
