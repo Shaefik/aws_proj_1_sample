@@ -21,10 +21,11 @@ function Contact() {
     e.preventDefault();
 
     try {
-      const res = await axios.post(
-        "http://localhost:5000/contact",
-        formData
-      );
+     const res = await axios.post(
+  "http://52.55.190.86:5000/contact",
+  formData
+);
+
 
       setResponseMsg(res.data.message);
       setFormData({ name: "", email: "", message: "" });
