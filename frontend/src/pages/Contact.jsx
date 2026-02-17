@@ -21,8 +21,9 @@ function Contact() {
     e.preventDefault();
 
     try {
-     const res = await axios.post(
-  "http://52.55.190.86:5000/contact",
+     
+const res = await axios.post(
+  "http://100.52.251.211:5000/contact",
   formData
 );
 
