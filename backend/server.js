@@ -4,7 +4,12 @@ const cors = require("cors");
 const app = express();
 const PORT = 5000;
 
-app.use(cors());
+app.use(cors({
+  origin: "http://static-frontent-1.s3-website-us-east-1.amazonaws.com",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
+
 app.use(express.json());
 
 app.get("/", (req, res) => {
@@ -20,8 +25,6 @@ app.post("/contact", (req, res) => {
   res.json({ message: "Form submitted successfully!" });
 });
 
-
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
 });
-
