@@ -23,7 +23,7 @@ function Contact() {
     try {
      
 const res = await axios.post(
-  "http://100.52.251.211:5000/contact",
+  "http://project-alb-671216835.us-east-1.elb.amazonaws.com/contact", 
   formData
 );
 
